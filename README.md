@@ -1,8 +1,8 @@
-# 🚀 ClipStack
+# 🚀 Clipper
 
 > **The Ultimate Cross-Platform Clipboard Manager for Developers**
 
-[![PyPI version](https://badge.fury.io/py/clipstack.svg)](https://badge.fury.io/py/clipstack)
+[![PyPI version](https://badge.fury.io/py/clipper.svg)](https://badge.fury.io/py/clipper)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
@@ -13,7 +13,7 @@
 
 ![ClipStack Demo](https://via.placeholder.com/800x400/1a1a1a/ffffff?text=ClipStack+Demo+GIF+Here)
 
-**Never lose your clipboard content again. ClipStack is the developer's best friend for managing clipboard history with style.**
+**Never lose your clipboard content again. Clipper is the developer's best friend for managing clipboard history with style.**
 
 [📖 **Documentation**](#-features) • [🚀 **Quick Start**](#-quick-start) • [💡 **Examples**](#-examples) • [🤝 **Contributing**](#-contributing) • [📄 **License**](#-license)
 
@@ -21,9 +21,9 @@
 
 ---
 
-## ✨ Why ClipStack?
+## ✨ Why Clipper?
 
-**ClipStack** is not just another clipboard manager—it's a **developer productivity powerhouse** designed from the ground up for modern development workflows.
+**Clipper** is not just another clipboard manager—it's a **developer productivity powerhouse** designed from the ground up for modern development workflows.
 
 ### 🎯 **Built for Developers, by Developers**
 
@@ -34,9 +34,9 @@
 - **⚡ Real-time Monitoring**: Automatic clipboard tracking with configurable intervals
 - **🔄 Interactive TUI**: Beautiful terminal user interface for power users
 
-### 🏆 **What Makes ClipStack Special**
+### 🏆 **What Makes Clipper Special**
 
-| Feature | ClipStack | Others |
+| Feature | Clipper | Others |
 |---------|-----------|---------|
 | **Speed** | ⚡ Instant | 🐌 Slow |
 | **Search** | 🔍 Fuzzy + Smart | 📝 Basic |
@@ -52,10 +52,10 @@
 
 ```bash
 # Install from PyPI (recommended)
-pip install clipstack
+pip install clipper
 
 # Or install from source
-git clone https://github.com/yourusername/clipstack.git
+git clone https://github.com/Rklearns/clipstack.git
 cd clipstack
 pip install -e .
 ```
@@ -64,16 +64,16 @@ pip install -e .
 
 ```bash
 # Save current clipboard content
-clipstack add
+clipper add
 
 # View your clipboard history
-clipstack list
+clipper list
 
 # Search for specific content
-clipstack search "python code"
+clipper search "python code"
 
 # Restore the last copied item
-clipstack pop
+clipper pop
 ```
 
 ---
@@ -112,40 +112,40 @@ clipstack pop
 
 | Command | Description | Example |
 |---------|-------------|---------|
-| `add` | Save current clipboard content | `clipstack add` |
-| `list` | Display clipboard history | `clipstack list` |
-| `search <query>` | Fuzzy search history | `clipstack search "api key"` |
-| `pop` | Restore last item | `clipstack pop` |
-| `restore <index>` | Restore specific item | `clipstack restore 3` |
+| `add` | Save current clipboard content | `clipper add` |
+| `list` | Display clipboard history | `clipper list` |
+| `search <query>` | Fuzzy search history | `clipper search "api key"` |
+| `pop` | Restore last item | `clipper pop` |
+| `restore <index>` | Restore specific item | `clipper restore 3` |
 
 ### 🔍 **Advanced Commands**
 
 | Command | Description | Example |
 |---------|-------------|---------|
-| `peek` | Show last copied item | `clipstack peek` |
-| `clear` | Clear entire history | `clipstack clear` |
-| `export <file>` | Export to JSON/CSV | `clipstack export backup.json` |
-| `import <file>` | Import from JSON/CSV | `clipstack import backup.json` |
-| `stats` | Show usage statistics | `clipstack stats` |
-| `info` | System information | `clipstack info` |
-| `tui` | Interactive terminal UI | `clipstack tui` |
-| `monitor` | Start clipboard monitoring | `clipstack monitor` |
+| `peek` | Show last copied item | `clipper peek` |
+| `clear` | Clear entire history | `clipper clear` |
+| `export <file>` | Export to JSON/CSV | `clipper export backup.json` |
+| `import <file>` | Import from JSON/CSV | `clipper import backup.json` |
+| `stats` | Show usage statistics | `clipper stats` |
+| `info` | System information | `clipper info` |
+| `tui` | Interactive terminal UI | `clipper tui` |
+| `monitor` | Start clipboard monitoring | `clipper monitor` |
 
 ---
 
 ## 🎭 Interactive TUI
 
-Experience ClipStack in its full glory with our beautiful terminal user interface:
+Experience Clipper in its full glory with our beautiful terminal user interface:
 
 ```bash
-clipstack tui
+clipper tui
 ```
 
 **Features:**
 - 📋 **History Browser**: Navigate through your clipboard history
 - 🔍 **Live Search**: Real-time search with instant results
 - 📊 **Statistics Dashboard**: Visual representation of your usage
-- ⚙️ **Settings Panel**: Configure ClipStack to your preferences
+- ⚙️ **Settings Panel**: Configure Clipper to your preferences
 - 🎨 **Rich Interface**: Beautiful colors and formatting
 
 ---
@@ -154,14 +154,14 @@ clipstack tui
 
 ### 📁 **Configuration Files**
 
-ClipStack stores its configuration and history in:
-- **History**: `~/.clipstack.json`
-- **Config**: `~/.clipstack/config.toml`
+Clipper stores its configuration and history in:
+- **History**: `~/.clipper.json`
+- **Config**: `~/.clipper/config.toml`
 
 ### 🔧 **Customization Options**
 
 ```toml
-# ~/.clipstack/config.toml
+# ~/.clipper/config.toml
 [storage]
 max_history = 200
 storage_type = "json"  # or "sqlite" (future)
@@ -205,7 +205,7 @@ pip install -e .
 pytest
 
 # Run with coverage
-pytest --cov=clipstack --cov-report=html
+pytest --cov=clipper --cov-report=html
 
 # Run specific test file
 pytest tests/test_clipboard.py
@@ -215,13 +215,13 @@ pytest tests/test_clipboard.py
 
 ```bash
 # Format code
-black clipstack/ tests/
+black clipper/ tests/
 
 # Lint code
-flake8 clipstack/ tests/
+flake8 clipper/ tests/
 
 # Type checking
-mypy clipstack/
+mypy clipper/
 
 # Run all quality checks
 make check
@@ -231,7 +231,7 @@ make check
 
 ## 🤝 Contributing
 
-We love contributions! Here's how you can help make ClipStack even better:
+We love contributions! Here's how you can help make Clipper even better:
 
 ### 🎯 **Ways to Contribute**
 
@@ -281,7 +281,7 @@ pre-commit run --all-files
 
 ## 🌟 Show Your Support
 
-If ClipStack has helped you become more productive, please consider:
+If Clipper has helped you become more productive, please consider:
 
 - ⭐ **Starring** this repository
 - 🚀 **Sharing** with your developer friends
@@ -295,7 +295,7 @@ If ClipStack has helped you become more productive, please consider:
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 **MIT License** means you can:
-- ✅ Use ClipStack commercially
+- ✅ Use Clipper commercially
 - ✅ Modify and distribute
 - ✅ Use privately
 - ✅ Sublicense

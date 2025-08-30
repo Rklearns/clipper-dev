@@ -3,7 +3,7 @@ requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "clipstack"
+name = "clipper"
 version = "0.1.0"
 description = "A powerful, cross-platform clipboard manager for developers"
 readme = "README.md"
@@ -61,11 +61,11 @@ Repository = "https://github.com/Rklearns/clipstack.git"
 "Release Notes" = "https://github.com/Rklearns/clipstack/releases"
 
 [project.scripts]
-clipstack = "clipstack.cli:app"
+clipper = "clipper.cli:app"
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["clipstack*"]
+include = ["clipper*"]
 
 [tool.black]
 line-length = 88
@@ -98,7 +98,7 @@ python_classes = ["Test*"]
 python_functions = ["test_*"]
 
 [tool.coverage.run]
-source = ["clipstack"]
+source = ["clipper"]
 omit = [
     "*/tests/*",
     "*/test_*",
