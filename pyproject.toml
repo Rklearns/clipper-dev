@@ -3,7 +3,7 @@ requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "clipper"
+name = "clipper-dev"
 version = "0.1.0"
 description = "A powerful, cross-platform clipboard manager for developers"
 readme = "README.md"
@@ -54,11 +54,11 @@ test = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/Rklearns/clipstack"
-Documentation = "https://github.com/Rklearns/clipstack#readme"
-Repository = "https://github.com/Rklearns/clipstack.git"
-"Bug Tracker" = "https://github.com/Rklearns/clipstack/issues"
-"Release Notes" = "https://github.com/Rklearns/clipstack/releases"
+Homepage = "https://github.com/Rklearns/clipper"
+Documentation = "https://github.com/Rklearns/clipper#readme"
+Repository = "https://github.com/Rklearns/clipper.git"
+"Bug Tracker" = "https://github.com/Rklearns/clipper/issues"
+"Release Notes" = "https://github.com/Rklearns/clipper/releases"
 
 [project.scripts]
 clipper = "clipper.cli:app"

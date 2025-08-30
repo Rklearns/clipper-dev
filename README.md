@@ -2,7 +2,7 @@
 
 > **The Ultimate Cross-Platform Clipboard Manager for Developers**
 
-[![PyPI version](https://badge.fury.io/py/clipper.svg)](https://badge.fury.io/py/clipper)
+[![PyPI version](https://badge.fury.io/py/clipper-dev.svg)](https://badge.fury.io/py/clipper-dev)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
@@ -52,11 +52,11 @@
 
 ```bash
 # Install from PyPI (recommended)
-pip install clipper
+pip install clipper-dev
 
 # Or install from source
-git clone https://github.com/Rklearns/clipstack.git
-cd clipstack
+git clone https://github.com/Rklearns/clipper.git
+cd clipper
 pip install -e .
 ```
 
