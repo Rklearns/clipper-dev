@@ -1,4 +1,4 @@
-# 🚀 Clipper
+#  Clipper
 
 > **The Ultimate Cross-Platform Clipboard Manager for Developers**
 
@@ -11,11 +11,10 @@
 
 <div align="center">
 
-![ClipStack Demo](https://via.placeholder.com/800x400/1a1a1a/ffffff?text=ClipStack+Demo+GIF+Here)
 
 **Never lose your clipboard content again. Clipper is the developer's best friend for managing clipboard history with style.**
 
-[📖 **Documentation**](#-features) • [🚀 **Quick Start**](#-quick-start) • [💡 **Examples**](#-examples) • [🤝 **Contributing**](#-contributing) • [📄 **License**](#-license)
+[**Documentation**](#-features) • [ **Quick Start**](#-quick-start) • [💡 **Examples**](#-examples) • [🤝 **Contributing**](#-contributing) • [📄 **License**](#-license)
 
 </div>
 
@@ -27,12 +26,12 @@
 
 ### 🎯 **Built for Developers, by Developers**
 
-- **🚀 Lightning Fast**: Instant search across thousands of clipboard entries
-- **🎨 Beautiful UI**: Rich terminal output that makes your terminal look professional
-- **🔍 Smart Search**: Fuzzy search with intelligent ranking and highlighting
-- **📱 Cross-Platform**: Seamless experience across macOS, Linux, and Windows
-- **⚡ Real-time Monitoring**: Automatic clipboard tracking with configurable intervals
-- **🔄 Interactive TUI**: Beautiful terminal user interface for power users
+- **Lightning Fast**: Instant search across thousands of clipboard entries
+- **Beautiful UI**: Rich terminal output that makes your terminal look professional
+- **Smart Search**: Fuzzy search with intelligent ranking and highlighting
+- **Cross-Platform**: Seamless experience across macOS, Linux, and Windows
+- **Real-time Monitoring**: Automatic clipboard tracking with configurable intervals
+- **Interactive TUI**: Beautiful terminal user interface for power users
 
 ### 🏆 **What Makes Clipper Special**
 
@@ -314,19 +313,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 📞 Support & Community
-
-- **🐛 Issues**: [GitHub Issues](https://github.com/Rklearns/clipper-dev/issues)
-- **💬 Discussions**: [GitHub Discussions](https://github.com/Rklearns/clipper-dev/discussions)
-- **📧 Email**: rishitkar@example.com
-- **🐦 Twitter**: [@Rklearns](https://twitter.com/Rklearns)
-
----
 
 <div align="center">
 
 **Made with ❤️ by developers, for developers**
 
-[⬆️ Back to Top](#-clipper)
+
 
 </div>
