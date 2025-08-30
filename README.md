@@ -6,8 +6,8 @@
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-[![Tests](https://img.shields.io/badge/tests-54%20passing-brightgreen.svg)](https://github.com/yourusername/clipstack)
-[![Platform](https://img.shields.io/badge/platform-macOS%20%7C%20Linux%20%7C%20Windows-lightgrey.svg)](https://github.com/yourusername/clipstack)
+[![Tests](https://img.shields.io/badge/tests-54%20passing-brightgreen.svg)](https://github.com/Rklearns/clipper-dev)
+[![Platform](https://img.shields.io/badge/platform-macOS%20%7C%20Linux%20%7C%20Windows-lightgrey.svg)](https://github.com/Rklearns/clipper-dev)
 
 <div align="center">
 
@@ -55,8 +55,8 @@
 pip install clipper-dev
 
 # Or install from source
-git clone https://github.com/Rklearns/clipper.git
-cd clipper
+git clone https://github.com/Rklearns/clipper-dev.git
+cd clipper-dev
 pip install -e .
 ```
 
@@ -184,8 +184,8 @@ track_interval = 1.0
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/clipstack.git
-cd clipstack
+git clone https://github.com/Rklearns/clipper-dev.git
+cd clipper-dev
 
 # Create virtual environment
 python -m venv venv
@@ -316,10 +316,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support & Community
 
-- **🐛 Issues**: [GitHub Issues](https://github.com/yourusername/clipstack/issues)
-- **💬 Discussions**: [GitHub Discussions](https://github.com/yourusername/clipstack/discussions)
-- **📧 Email**: your.email@example.com
-- **🐦 Twitter**: [@yourusername](https://twitter.com/yourusername)
+- **🐛 Issues**: [GitHub Issues](https://github.com/Rklearns/clipper-dev/issues)
+- **💬 Discussions**: [GitHub Discussions](https://github.com/Rklearns/clipper-dev/discussions)
+- **📧 Email**: rishitkar@example.com
+- **🐦 Twitter**: [@Rklearns](https://twitter.com/Rklearns)
 
 ---
 
@@ -327,6 +327,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Made with ❤️ by developers, for developers**
 
-[⬆️ Back to Top](#-clipstack)
+[⬆️ Back to Top](#-clipper)
 
 </div>

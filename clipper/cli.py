@@ -1,5 +1,5 @@
 """
-Command Line Interface for ClipStack.
+Command Line Interface for Clipper.
 
 This module provides the main CLI interface using Typer, with all
 the commands and options for managing clipboard history.
@@ -21,7 +21,7 @@ from .tui import run_tui
 
 # Initialize Typer app
 app = typer.Typer(
-    name="clipstack",
+    name="clipper",
     help="A powerful, cross-platform clipboard manager for developers",
     add_completion=False,
     rich_markup_mode="rich"
@@ -94,7 +94,7 @@ def list(
     items_to_show = storage.history[:limit] if limit else storage.history
     
     # Create table
-    table = Table(title="📋 ClipStack - Your Clipboard History")
+    table = Table(title="📋 Clipper - Your Clipboard History")
     table.add_column("Index", style="cyan", justify="center")
     table.add_column("Timestamp", style="green")
     table.add_column("Type", style="blue")
@@ -310,7 +310,7 @@ def info() -> None:
     storage_info = storage.get_storage_info()
     
     # Create info table
-    table = Table(title="ℹ️ ClipStack System Information")
+    table = Table(title="ℹ️ Clipper System Information")
     table.add_column("Category", style="cyan")
     table.add_column("Details", style="white")
     
@@ -329,7 +329,7 @@ def info() -> None:
 @app.command()
 def tui() -> None:
     """Launch the interactive terminal user interface."""
-    console.print("[green]Launching ClipStack TUI...[/green]")
+    console.print("[green]Launching Clipper TUI...[/green]")
     run_tui()
 
 
@@ -363,14 +363,14 @@ def main(
     config_file: Optional[str] = typer.Option(None, "--config", "-c", help="Configuration file path")
 ) -> None:
     """
-    ClipStack - A powerful, cross-platform clipboard manager for developers.
+    Clipper - A powerful, cross-platform clipboard manager for developers.
     
     Manage your clipboard history with ease. Copy, search, and restore
     your copied content with lightning-fast search and beautiful output.
     """
     if version:
         from . import __version__
-        console.print(f"ClipStack version {__version__}")
+        console.print(f"Clipper version {__version__}")
         raise typer.Exit()
     
     # Load configuration if specified
