@@ -67,7 +67,7 @@ class ClipStackTUI(App):
         super().__init__()
         self.storage = StorageManager()
         self.search_manager = SearchManager()
-        self.clipboard = ClipboardManager()
+        self.clipboard_manager = ClipboardManager()
         self.current_selection: Optional[ClipboardItem] = None
     
     def compose(self) -> ComposeResult:
@@ -222,7 +222,7 @@ class ClipStackTUI(App):
                 self.current_selection = item
                 
                 # Copy to clipboard
-                if self.clipboard.set_content(item.content):
+                if self.clipboard_manager.set_content(item.content):
                     status_label = self.query_one("#status-label", Label)
                     status_label.update(f"Copied item {index} to clipboard")
                 else:
@@ -295,7 +295,7 @@ class ClipStackTUI(App):
     def update_settings(self) -> None:
         """Update the settings display."""
         storage_info = self.storage.get_storage_info()
-        clipboard_status = self.clipboard.get_status()
+        clipboard_status = self.clipboard_manager.get_status()
         
         settings_content = self.query_one("#settings-content", Static)
         
@@ -331,8 +331,8 @@ class ClipStackTUI(App):
     def on_exit(self) -> None:
         """Handle application exit."""
         # Stop clipboard monitoring if active
-        if self.clipboard.is_monitoring():
-            self.clipboard.stop_monitoring()
+        if self.clipboard_manager.is_monitoring():
+            self.clipboard_manager.stop_monitoring()
 
 
 def run_tui() -> None:
