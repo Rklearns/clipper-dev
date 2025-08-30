@@ -1,0 +1,121 @@
+# ClipStack Configuration File
+# Copy this file to ~/.clipstack/config.toml and customize as needed
+
+[storage]
+# Maximum number of items to keep in history
+max_history = 200
+
+# Storage backend type (currently only "json" is supported)
+# Future versions will support "sqlite"
+storage_type = "json"
+
+# Custom storage path (optional, defaults to ~/.clipstack.json)
+# storage_path = "/custom/path/clipstack.json"
+
+[display]
+# Maximum length for content previews
+max_preview_length = 80
+
+# Whether to show timestamps in output
+show_timestamps = true
+
+# Color scheme: "auto", "light", "dark", or "none"
+color_scheme = "auto"
+
+# Date/time format for timestamps
+# timestamp_format = "%Y-%m-%d %H:%M:%S"
+
+[clipboard]
+# Whether to automatically track clipboard changes
+auto_track = true
+
+# Interval in seconds between clipboard checks (when monitoring)
+track_interval = 1.0
+
+# Maximum content size to store (in bytes)
+max_content_size = 10485760  # 10MB
+
+# Content types to automatically detect
+auto_detect_types = true
+
+# Whether to prevent duplicate consecutive entries
+prevent_duplicates = true
+
+[search]
+# Default search type: "fuzzy", "exact", or "regex"
+default_search_type = "fuzzy"
+
+# Minimum similarity score for fuzzy search (0-100)
+fuzzy_threshold = 60
+
+# Maximum number of search results to return
+max_search_results = 50
+
+# Whether to enable search suggestions
+enable_suggestions = true
+
+[export]
+# Default export format: "json" or "csv"
+default_format = "json"
+
+# Whether to include metadata in exports
+include_metadata = true
+
+# Default export directory
+default_directory = "."
+
+[tui]
+# Whether to enable TUI mode
+enabled = true
+
+# TUI theme: "default", "dark", or "light"
+theme = "default"
+
+# Keyboard shortcuts
+shortcuts = {
+    "refresh" = "ctrl+r",
+    "quit" = "ctrl+q",
+    "search" = "ctrl+s",
+    "clear" = "ctrl+x"
+}
+
+[monitoring]
+# Whether to start monitoring on startup
+start_on_startup = false
+
+# Notification settings
+notifications = {
+    "enabled" = true,
+    "sound" = false,
+    "desktop" = true
+}
+
+# Auto-cleanup settings
+cleanup = {
+    "enabled" = true,
+    "max_age_days" = 30,
+    "min_items" = 10
+}
+
+[advanced]
+# Debug mode (more verbose output)
+debug = false
+
+# Log level: "DEBUG", "INFO", "WARNING", "ERROR"
+log_level = "INFO"
+
+# Log file path (optional)
+# log_file = "~/.clipstack/clipstack.log"
+
+# Performance settings
+performance = {
+    "cache_size" = 1000,
+    "batch_size" = 100,
+    "async_operations" = true
+}
+
+# Plugin settings (future feature)
+plugins = {
+    "enabled" = false,
+    "directory" = "~/.clipstack/plugins"
+}
