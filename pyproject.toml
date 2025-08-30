@@ -9,10 +9,10 @@ description = "A powerful, cross-platform clipboard manager for developers"
 readme = "README.md"
 license = {text = "MIT"}
 authors = [
-    {name = "Your Name", email = "your.email@example.com"}
+    {name = "Rishit Kar", email = "rishitkar@example.com"}
 ]
 maintainers = [
-    {name = "Your Name", email = "your.email@example.com"}
+    {name = "Rishit Kar", email = "rishitkar@example.com"}
 ]
 keywords = ["clipboard", "manager", "terminal", "cli", "productivity", "developer-tools"]
 classifiers = [
@@ -54,11 +54,11 @@ test = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/yourusername/clipstack"
-Documentation = "https://github.com/yourusername/clipstack#readme"
-Repository = "https://github.com/yourusername/clipstack.git"
-"Bug Tracker" = "https://github.com/yourusername/clipstack/issues"
-"Release Notes" = "https://github.com/yourusername/clipstack/releases"
+Homepage = "https://github.com/Rklearns/clipstack"
+Documentation = "https://github.com/Rklearns/clipstack#readme"
+Repository = "https://github.com/Rklearns/clipstack.git"
+"Bug Tracker" = "https://github.com/Rklearns/clipstack/issues"
+"Release Notes" = "https://github.com/Rklearns/clipstack/releases"
 
 [project.scripts]
 clipstack = "clipstack.cli:app"
