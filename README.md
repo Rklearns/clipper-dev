@@ -24,7 +24,7 @@
 
 **Clipper** is not just another clipboard manager—it's a **developer productivity powerhouse** designed from the ground up for modern development workflows.
 
-### 🎯 **Built for Developers, by Developers**
+###  **Built for Developers, by Developers**
 
 - **Lightning Fast**: Instant search across thousands of clipboard entries
 - **Beautiful UI**: Rich terminal output that makes your terminal look professional
@@ -33,21 +33,21 @@
 - **Real-time Monitoring**: Automatic clipboard tracking with configurable intervals
 - **Interactive TUI**: Beautiful terminal user interface for power users
 
-### 🏆 **What Makes Clipper Special**
+###  **What Makes Clipper Special**
 
 | Feature | Clipper | Others |
 |---------|-----------|---------|
-| **Speed** | ⚡ Instant | 🐌 Slow |
-| **Search** | 🔍 Fuzzy + Smart | 📝 Basic |
-| **UI** | 🎨 Rich + Beautiful | 📱 Plain |
-| **Cross-Platform** | 🌍 All OS | 🖥️ Limited |
-| **Developer Focus** | 👨‍💻 Built for devs | 👥 Generic |
+| **Speed** |  Instant |  Slow |
+| **Search** |  Fuzzy + Smart |  Basic |
+| **UI** |  Rich + Beautiful |  Plain |
+| **Cross-Platform** |  All OS |  Limited |
+| **Developer Focus** |  Built for devs |  Generic |
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
-### 📦 **Installation**
+###  **Installation**
 
 ```bash
 # Install from PyPI (recommended)
@@ -59,7 +59,7 @@ cd clipper-dev
 pip install -e .
 ```
 
-### 🎯 **First Steps**
+###  **First Steps**
 
 ```bash
 # Save current clipboard content
@@ -77,37 +77,37 @@ clipper pop
 
 ---
 
-## 🎨 Features
+##  Features
 
-### 🔥 **Core Functionality**
+###  **Core Functionality**
 
-- **📋 Smart History**: Intelligent duplicate detection and content organization
-- **🔍 Advanced Search**: Fuzzy search with configurable algorithms and scoring
-- **⚡ Real-time Monitoring**: Automatic clipboard tracking with customizable intervals
-- **🎯 Content Types**: Automatic detection and categorization of different content types
-- **📊 Rich Statistics**: Comprehensive analytics and usage insights
+- **Smart History**: Intelligent duplicate detection and content organization
+- **Advanced Search**: Fuzzy search with configurable algorithms and scoring
+- **Real-time Monitoring**: Automatic clipboard tracking with customizable intervals
+- **Content Types**: Automatic detection and categorization of different content types
+- **Rich Statistics**: Comprehensive analytics and usage insights
 
-### 🎭 **User Experience**
+### **User Experience**
 
-- **🎨 Rich Terminal Output**: Beautiful, colorful interface using Rich library
-- **📱 Interactive TUI**: Full-featured terminal user interface
-- **🔧 Configurable**: Extensive customization options
-- **📱 Cross-Platform**: Consistent experience across all operating systems
-- **⚡ Performance**: Optimized for speed and efficiency
+- **Rich Terminal Output**: Beautiful, colorful interface using Rich library
+- **Interactive TUI**: Full-featured terminal user interface
+- **Configurable**: Extensive customization options
+- **Cross-Platform**: Consistent experience across all operating systems
+- **Performance**: Optimized for speed and efficiency
 
-### 🛠️ **Developer Tools**
+###  **Developer Tools**
 
-- **📦 Easy Packaging**: Simple setup for distribution and deployment
-- **🧪 Comprehensive Testing**: Full test coverage with pytest
-- **📚 Documentation**: Extensive inline documentation and examples
-- **🔧 Configuration**: Flexible configuration management
-- **📊 Monitoring**: Built-in performance and usage monitoring
+- **Easy Packaging**: Simple setup for distribution and deployment
+- **Comprehensive Testing**: Full test coverage with pytest
+- **Documentation**: Extensive inline documentation and examples
+- **Configuration**: Flexible configuration management
+- **Monitoring**: Built-in performance and usage monitoring
 
 ---
 
-## 📖 Command Reference
+##  Command Reference
 
-### 🎯 **Essential Commands**
+###  **Essential Commands**
 
 | Command | Description | Example |
 |---------|-------------|---------|
@@ -132,7 +132,7 @@ clipper pop
 
 ---
 
-## 🎭 Interactive TUI
+##  Interactive TUI
 
 Experience Clipper in its full glory with our beautiful terminal user interface:
 
@@ -141,23 +141,23 @@ clipper tui
 ```
 
 **Features:**
-- 📋 **History Browser**: Navigate through your clipboard history
-- 🔍 **Live Search**: Real-time search with instant results
-- 📊 **Statistics Dashboard**: Visual representation of your usage
-- ⚙️ **Settings Panel**: Configure Clipper to your preferences
-- 🎨 **Rich Interface**: Beautiful colors and formatting
+- **History Browser**: Navigate through your clipboard history
+- **Live Search**: Real-time search with instant results
+- **Statistics Dashboard**: Visual representation of your usage
+- **Settings Panel**: Configure Clipper to your preferences
+  **Rich Interface**: Beautiful colors and formatting
 
 ---
 
-## ⚙️ Configuration
+##  Configuration
 
-### 📁 **Configuration Files**
+###  **Configuration Files**
 
 Clipper stores its configuration and history in:
 - **History**: `~/.clipper.json`
 - **Config**: `~/.clipper/config.toml`
 
-### 🔧 **Customization Options**
+###  **Customization Options**
 
 ```toml
 # ~/.clipper/config.toml
@@ -177,9 +177,9 @@ track_interval = 1.0
 
 ---
 
-## 🧪 Development
+##  Development
 
-### 🚀 **Setting Up Development Environment**
+###  **Setting Up Development Environment**
 
 ```bash
 # Clone the repository
@@ -197,7 +197,7 @@ pip install -r requirements-dev.txt
 pip install -e .
 ```
 
-### 🧪 **Running Tests**
+###  **Running Tests**
 
 ```bash
 # Run all tests
@@ -210,7 +210,7 @@ pytest --cov=clipper --cov-report=html
 pytest tests/test_clipboard.py
 ```
 
-### 🔧 **Code Quality**
+###  **Code Quality**
 
 ```bash
 # Format code
@@ -234,13 +234,13 @@ We love contributions! Here's how you can help make Clipper even better:
 
 ### 🎯 **Ways to Contribute**
 
-- 🐛 **Report Bugs**: Open an issue with detailed bug reports
-- 💡 **Suggest Features**: Share your ideas for new features
-- 📝 **Improve Documentation**: Help make our docs even better
-- 🔧 **Fix Issues**: Pick up issues and submit pull requests
-- 🌟 **Star the Project**: Show your support by starring
+-  **Report Bugs**: Open an issue with detailed bug reports
+- �**Suggest Features**: Share your ideas for new features
+-  **Improve Documentation**: Help make our docs even better
+-  **Fix Issues**: Pick up issues and submit pull requests
+-  **Star the Project**: Show your support by starring
 
-### 📋 **Contribution Guidelines**
+###  **Contribution Guidelines**
 
 1. **Fork** the repository
 2. **Create** a feature branch (`git checkout -b feature/amazing-feature`)
@@ -248,7 +248,7 @@ We love contributions! Here's how you can help make Clipper even better:
 4. **Push** to the branch (`git push origin feature/amazing-feature`)
 5. **Open** a Pull Request
 
-### 🏗️ **Development Setup**
+###  **Development Setup**
 
 ```bash
 # Install pre-commit hooks
@@ -260,32 +260,16 @@ pre-commit run --all-files
 
 ---
 
-## 📊 Performance
 
-### ⚡ **Speed Benchmarks**
-
-- **Search**: 1000+ items in <10ms
-- **Add**: New items in <5ms
-- **Startup**: Ready in <100ms
-- **Memory**: Efficient memory usage
-
-### 📈 **Scalability**
-
-- **History Size**: Tested up to 10,000 items
-- **Search Performance**: O(log n) complexity
-- **Storage**: Optimized JSON with compression
-- **Memory**: Intelligent caching and cleanup
-
----
 
 ## 🌟 Show Your Support
 
 If Clipper has helped you become more productive, please consider:
 
-- ⭐ **Starring** this repository
-- 🚀 **Sharing** with your developer friends
-- 💬 **Joining** our community discussions
-- ☕ **Buying us a coffee** (if you're feeling generous)
+-  **Starring** this repository
+-  **Sharing** with your developer friends
+-  **Joining** our community discussions
+-  **Buying us a coffee** (if you're feeling generous)
 
 ---
 
@@ -294,12 +278,11 @@ If Clipper has helped you become more productive, please consider:
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 **MIT License** means you can:
-- ✅ Use Clipper commercially
-- ✅ Modify and distribute
-- ✅ Use privately
-- ✅ Sublicense
-- ❌ Hold authors liable
-- ❌ Provide warranty
+- Use Clipper commercially
+- Modify and distribute
+- Use privately
+- Sublicense
+
 
 ---
 
