@@ -1,6 +1,6 @@
-# 🤝 Contributing to ClipStack
+# 🤝 Contributing to clipper-dev
 
-Thank you for your interest in contributing to ClipStack! This document provides guidelines and information for contributors.
+Thank you for your interest in contributing to clipper-dev! This document provides guidelines and information for contributors.
 
 ## 🚀 Quick Start
 
@@ -25,8 +25,8 @@ Thank you for your interest in contributing to ClipStack! This document provides
 
 ```bash
 # Clone and setup
-git clone https://github.com/yourusername/clipstack.git
-cd clipstack
+git clone https://github.com/yourusername/clipper-dev.git
+cd clipper-dev
 
 # Create virtual environment
 python -m venv venv
@@ -46,27 +46,13 @@ pip install -e .
 pytest
 
 # Run with coverage
-pytest --cov=clipstack --cov-report=term-missing
+pytest --cov=clipper-dev --cov-report=term-missing
 
 # Run specific test file
 pytest tests/test_clipboard.py
 ```
 
-### Code Quality
 
-```bash
-# Format code
-black clipstack/ tests/
-
-# Lint code
-flake8 clipstack/ tests/
-
-# Type checking
-mypy clipstack/
-
-# Run all checks
-make check
-```
 
 ## 📋 Contribution Guidelines
 
