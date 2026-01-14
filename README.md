@@ -117,7 +117,7 @@ clipper pop
 | `pop` | Restore last item | `clipper pop` |
 | `restore <index>` | Restore specific item | `clipper restore 3` |
 
-### 🔍 **Advanced Commands**
+###  **Advanced Commands**
 
 | Command | Description | Example |
 |---------|-------------|---------|
@@ -232,7 +232,7 @@ make check
 
 We love contributions! Here's how you can help make Clipper even better:
 
-### 🎯 **Ways to Contribute**
+###  **Ways to Contribute**
 
 -  **Report Bugs**: Open an issue with detailed bug reports
 - �**Suggest Features**: Share your ideas for new features
@@ -262,7 +262,7 @@ pre-commit run --all-files
 
 
 
-## 🌟 Show Your Support
+##  Show Your Support
 
 If Clipper has helped you become more productive, please consider:
 
@@ -273,7 +273,7 @@ If Clipper has helped you become more productive, please consider:
 
 ---
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
@@ -286,7 +286,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - **Rich**: For beautiful terminal output
 - **Typer**: For excellent CLI framework
