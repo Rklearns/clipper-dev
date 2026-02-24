@@ -14,15 +14,15 @@
 
 **Never lose your clipboard content again. Clipper is the developer's best friend for managing clipboard history with style.**
 
-[**Documentation**](#-features) • [ **Quick Start**](#-quick-start) • [💡 **Examples**](#-examples) • [🤝 **Contributing**](#-contributing) • [📄 **License**](#-license)
+[**Documentation**](#-features) • [ **Quick Start**](#-quick-start) • [ **Examples**](#-examples) • [ **Contributing**](#-contributing) • [ **License**](#-license)
 
 </div>
 
 ---
 
-## ✨ Why Clipper?
+##  Why Clipper-dev?
 
-**Clipper** is not just another clipboard manager—it's a **developer productivity powerhouse** designed from the ground up for modern development workflows.
+**Clipper-dev** is not just another clipboard manager—it's a **developer productivity powerhouse** designed from the ground up for modern development workflows.
 
 ###  **Built for Developers, by Developers**
 
@@ -228,7 +228,7 @@ make check
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 We love contributions! Here's how you can help make Clipper even better:
 
