@@ -1,4 +1,4 @@
-#  Clipper
+#  Clipper-dev
 
 > **The Ultimate Cross-Platform Clipboard Manager for Developers**
 
