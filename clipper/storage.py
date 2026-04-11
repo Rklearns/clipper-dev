@@ -81,6 +81,7 @@ class StorageManager:
             self.storage_path = Path.home() / ".clipper.json"
 
         self.history: List[ClipboardItem] = []
+        self._last_loaded_mtime: Optional[float] = None
         self.load_history()
 
     def add_item(self, content: str, content_type: str = "text") -> bool:
@@ -358,24 +359,51 @@ class StorageManager:
             console.print(f"[red]Error importing history: {e}[/red]")
             return False
 
-    def load_history(self) -> None:
-        """Load clipboard history from storage."""
+    def _get_storage_mtime(self) -> Optional[float]:
+        """Return the storage file modification time if it exists."""
+        if not self.storage_path.exists():
+            return None
+
+        return self.storage_path.stat().st_mtime
+
+    def load_history(self) -> bool:
+        """Load clipboard history from storage.
+
+        Returns:
+            True if the in-memory history changed, False otherwise.
+        """
         try:
             if self.storage_path.exists():
                 with open(self.storage_path, "r", encoding="utf-8") as f:
-                    data = json.load(f)
-                    self.history = [ClipboardItem.from_dict(item) for item in data]
-                    console.print(
-                        f"[green]Loaded {len(self.history)} items "
-                        f"from history[/green]"
-                    )
+                    raw_data = f.read().strip()
+
+                if raw_data:
+                    data = json.loads(raw_data)
+                    new_history = [ClipboardItem.from_dict(item) for item in data]
+                else:
+                    new_history = []
+
+                changed = new_history != self.history
+                self.history = new_history
+                self._last_loaded_mtime = self._get_storage_mtime()
+                console.print(
+                    f"[green]Loaded {len(self.history)} items "
+                    f"from history[/green]"
+                )
+                return changed
             else:
+                changed = bool(self.history)
+                self.history = []
+                self._last_loaded_mtime = None
                 console.print(
                     "[yellow]No existing history found, " "starting fresh[/yellow]"
                 )
+                return changed
         except Exception as e:
             console.print(f"[red]Error loading history: {e}[/red]")
+            self._last_loaded_mtime = self._get_storage_mtime()
             self.history = []
+            return False
 
     def save_history(self) -> None:
         """Save clipboard history to storage."""
@@ -388,8 +416,18 @@ class StorageManager:
             with open(self.storage_path, "w", encoding="utf-8") as f:
                 json.dump(data, f, indent=2, ensure_ascii=False)
 
+            self._last_loaded_mtime = self._get_storage_mtime()
+
         except Exception as e:
             console.print(f"[red]Error saving history: {e}[/red]")
+
+    def reload_history_if_changed(self) -> bool:
+        """Reload history when the backing file changes on disk."""
+        current_mtime = self._get_storage_mtime()
+        if current_mtime == self._last_loaded_mtime:
+            return False
+
+        return self.load_history()
 
     def display_history(self, max_preview_length: int = 80) -> None:
         """
