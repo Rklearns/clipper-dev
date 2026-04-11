@@ -8,7 +8,7 @@ clipboard history with lightning-fast search and seamless cross-platform support
 
 __version__ = "0.1.3"
 __author__ = "Rishit Kar"
-__email__ = "rishitkar@example.com"
+__email__ = "emailrishitkar@gmail.com"
 __license__ = "MIT"
 __url__ = "https://github.com/Rklearns/clipper-dev"
 
