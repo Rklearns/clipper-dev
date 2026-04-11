@@ -6,7 +6,7 @@ Built with Python and designed for productivity, it provides instant access to y
 clipboard history with lightning-fast search and seamless cross-platform support.
 """
 
-__version__ = "0.1.1"
+__version__ = "0.1.3"
 __author__ = "Rishit Kar"
 __email__ = "rishitkar@example.com"
 __license__ = "MIT"

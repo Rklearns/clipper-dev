@@ -6,9 +6,10 @@ import pytest
 import json
 import tempfile
 import os
+import time
 from pathlib import Path
 from unittest.mock import patch, MagicMock
-from clipstack.storage import StorageManager, ClipboardItem
+from clipper.storage import StorageManager, ClipboardItem
 
 
 class TestClipboardItem:
@@ -126,12 +127,12 @@ class TestStorageManager:
     def test_init_default(self):
         """Test StorageManager initialization with default values."""
         # Test with default path
-        with patch('clipstack.storage.Path.home') as mock_home:
+        with patch('clipper.storage.Path.home') as mock_home:
             mock_home.return_value = Path("/home/test")
             storage = StorageManager()
             
             assert storage.max_history == 200
-            assert storage.storage_path == Path("/home/test/.clipstack.json")
+            assert storage.storage_path == Path("/home/test/.clipper.json")
             assert storage.history == []
     
     def test_init_custom(self):
@@ -302,6 +303,36 @@ class TestStorageManager:
         assert len(new_storage.history) == 2
         assert new_storage.history[0].content == "test content 2"  # Most recent first
         assert new_storage.history[1].content == "test content 1"
+
+    def test_reload_history_if_changed_detects_external_updates(self):
+        """Test reloading history when the storage file changes externally."""
+        self.storage.add_item("existing content", "text")
+        original_mtime = self.storage._last_loaded_mtime
+
+        external_data = [
+            {
+                "content": "externally added content",
+                "timestamp": time.time() + 1,
+                "content_type": "text",
+                "content_length": 24,
+                "lines": 1,
+                "words": 3,
+            }
+        ]
+
+        time.sleep(0.02)
+        with open(self.storage_path, "w", encoding="utf-8") as f:
+            json.dump(external_data, f)
+
+        assert self.storage.reload_history_if_changed() is True
+        assert self.storage.history[0].content == "externally added content"
+        assert self.storage._last_loaded_mtime != original_mtime
+
+    def test_reload_history_if_changed_returns_false_without_updates(self):
+        """Test reloading history when the storage file has not changed."""
+        self.storage.add_item("stable content", "text")
+
+        assert self.storage.reload_history_if_changed() is False
     
     def test_export_history_json(self):
         """Test exporting history to JSON."""

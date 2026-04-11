@@ -4,7 +4,7 @@ Tests for the clipboard module.
 
 import pytest
 from unittest.mock import patch, MagicMock
-from clipstack.clipboard import ClipboardManager
+from clipper.clipboard import ClipboardManager
 
 
 class TestClipboardManager:
@@ -21,32 +21,32 @@ class TestClipboardManager:
         assert self.clipboard.last_content is None
         assert self.clipboard.monitoring is False
     
-    @patch('clipstack.clipboard.pyperclip.paste')
+    @patch('clipper.clipboard.pyperclip.paste')
     def test_get_content_success(self, mock_paste):
         """Test successful clipboard content retrieval."""
         mock_paste.return_value = "test content"
         content = self.clipboard.get_content()
         assert content == "test content"
     
-    @patch('clipstack.clipboard.pyperclip.paste')
+    @patch('clipper.clipboard.pyperclip.paste')
     def test_get_content_empty(self, mock_paste):
         """Test clipboard content retrieval when empty."""
         mock_paste.return_value = ""
         content = self.clipboard.get_content()
         assert content == ""
     
-    @patch('clipstack.clipboard.pyperclip.paste')
+    @patch('clipper.clipboard.pyperclip.paste')
     def test_get_content_exception(self, mock_paste):
         """Test clipboard content retrieval with exception."""
         from pyperclip import PyperclipException
         mock_paste.side_effect = PyperclipException("Clipboard error")
         
-        with patch('clipstack.clipboard.console') as mock_console:
+        with patch('clipper.clipboard.console') as mock_console:
             content = self.clipboard.get_content()
             assert content == ""
             mock_console.print.assert_called_once()
     
-    @patch('clipstack.clipboard.pyperclip.copy')
+    @patch('clipper.clipboard.pyperclip.copy')
     def test_set_content_success(self, mock_copy):
         """Test successful clipboard content setting."""
         result = self.clipboard.set_content("new content")
@@ -54,18 +54,18 @@ class TestClipboardManager:
         assert self.clipboard.last_content == "new content"
         mock_copy.assert_called_once_with("new content")
     
-    @patch('clipstack.clipboard.pyperclip.copy')
+    @patch('clipper.clipboard.pyperclip.copy')
     def test_set_content_exception(self, mock_copy):
         """Test clipboard content setting with exception."""
         from pyperclip import PyperclipException
         mock_copy.side_effect = PyperclipException("Clipboard error")
         
-        with patch('clipstack.clipboard.console') as mock_console:
+        with patch('clipper.clipboard.console') as mock_console:
             result = self.clipboard.set_content("new content")
             assert result is False
             mock_console.print.assert_called_once()
     
-    @patch('clipstack.clipboard.pyperclip.paste')
+    @patch('clipper.clipboard.pyperclip.paste')
     def test_has_changed_true(self, mock_paste):
         """Test clipboard change detection when content has changed."""
         mock_paste.return_value = "new content"
@@ -75,7 +75,7 @@ class TestClipboardManager:
         assert result is True
         assert self.clipboard.last_content == "new content"
     
-    @patch('clipstack.clipboard.pyperclip.paste')
+    @patch('clipper.clipboard.pyperclip.paste')
     def test_has_changed_false(self, mock_paste):
         """Test clipboard change detection when content hasn't changed."""
         mock_paste.return_value = "same content"
@@ -84,12 +84,12 @@ class TestClipboardManager:
         result = self.clipboard.has_changed()
         assert result is False
     
-    @patch('clipstack.clipboard.pyperclip.paste')
+    @patch('clipper.clipboard.pyperclip.paste')
     def test_get_content_info(self, mock_paste):
         """Test content info retrieval."""
         mock_paste.return_value = "test\ncontent\nhere"
         
-        with patch('clipstack.clipboard.time.time') as mock_time:
+        with patch('clipper.clipboard.time.time') as mock_time:
             mock_time.return_value = 1234567890.0
             info = self.clipboard.get_content_info()
             
@@ -165,7 +165,7 @@ class TestClipboardManager:
     
     def test_get_status(self):
         """Test status information retrieval."""
-        with patch('clipstack.clipboard.pyperclip.determine_clipboard') as mock_determine:
+        with patch('clipper.clipboard.pyperclip.determine_clipboard') as mock_determine:
             mock_determine.return_value = "test_platform"
             
             status = self.clipboard.get_status()

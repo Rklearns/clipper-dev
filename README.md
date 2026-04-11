@@ -123,7 +123,7 @@ clipper pop
 | `peek` | Show last copied item | `clipper peek` |
 | `clear` | Clear entire history | `clipper clear` |
 | `export <file>` | Export to JSON/CSV | `clipper export backup.json` |
-| `import <file>` | Import from JSON/CSV | `clipper import backup.json` |
+| `import-history <file>` | Import from JSON/CSV | `clipper import-history backup.json` |
 | `stats` | Show usage statistics | `clipper stats` |
 | `info` | System information | `clipper info` |
 | `tui` | Interactive terminal UI | `clipper tui` |
@@ -142,9 +142,10 @@ clipper tui
 **Features:**
 - **History Browser**: Navigate through your clipboard history
 - **Live Search**: Real-time search with instant results
+- **Auto Refresh**: Reloads automatically when clipboard history changes on disk
 - **Statistics Dashboard**: Visual representation of your usage
 - **Settings Panel**: Configure Clipper to your preferences
-  **Rich Interface**: Beautiful colors and formatting
+- **Rich Interface**: Beautiful colors and formatting
 
 ---
 
@@ -152,14 +153,13 @@ clipper tui
 
 ###  **Configuration Files**
 
-Clipper stores its configuration and history in:
+Clipper currently persists its clipboard history in:
 - **History**: `~/.clipper.json`
-- **Config**: `~/.clipper/config.toml`
 
 ###  **Customization Options**
 
 ```toml
-# ~/.clipper/config.toml
+# Future configuration shape
 [storage]
 max_history = 200
 storage_type = "json"  # or "sqlite" (future)
@@ -173,6 +173,8 @@ color_scheme = "auto"
 auto_track = true
 track_interval = 1.0
 ```
+
+Configuration file loading is not wired up yet, so today the active persisted file is the history file above.
 
 ---
 

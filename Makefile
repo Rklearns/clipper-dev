@@ -14,20 +14,20 @@ install-dev:  ## Install development dependencies
 	pip install -e .
 
 test:  ## Run tests
-	pytest tests/ -v --cov=clipstack --cov-report=html --cov-report=term-missing
+	pytest tests/ -v --cov=clipper --cov-report=html --cov-report=term-missing
 
 test-fast:  ## Run tests without coverage
 	pytest tests/ -v
 
 lint:  ## Run linting
-	flake8 clipstack/ tests/
-	mypy clipstack/
+	flake8 clipper/ tests/
+	mypy clipper/
 
 format:  ## Format code with black
-	black clipstack/ tests/
+	black clipper/ tests/
 
 format-check:  ## Check code formatting
-	black --check clipstack/ tests/
+	black --check clipper/ tests/
 
 clean:  ## Clean build artifacts
 	rm -rf build/
