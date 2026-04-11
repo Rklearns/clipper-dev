@@ -9,10 +9,10 @@ description = "A powerful, cross-platform clipboard manager for developers"
 readme = "README.md"
 license = {text = "MIT"}
 authors = [
-    {name = "Rishit Kar", email = "rishitkar@example.com"}
+    {name = "Rishit Kar", email = "emailrishitkar@gmail.com"}
 ]
 maintainers = [
-    {name = "Rishit Kar", email = "rishitkar@example.com"}
+    {name = "Rishit Kar", email = "emailrishitkar@gmail.com"}
 ]
 keywords = ["clipboard", "manager", "terminal", "cli", "productivity", "developer-tools"]
 classifiers = [
