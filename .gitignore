@@ -174,9 +174,9 @@ Thumbs.db
 ehthumbs.db
 Desktop.ini
 
-# ClipStack specific
-.clipstack.json
-.clipstack/
+# Clipper specific
+.clipper.json
+.clipper/
 *.backup
 *.tmp
 

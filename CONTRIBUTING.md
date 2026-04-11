@@ -33,7 +33,7 @@ python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 # Install development dependencies
-pip install -r requirements-dev.txt
+pip install -r requirements.txt
 
 # Install in development mode
 pip install -e .
@@ -142,8 +142,8 @@ For feature requests:
 
 ## 📞 Getting Help
 
-- **Issues**: [GitHub Issues](https://github.com/yourusername/clipstack/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/clipstack/discussions)
+- **Issues**: [GitHub Issues](https://github.com/Rklearns/clipper-dev/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/Rklearns/clipper-dev/discussions)
 - **Email**: your.email@example.com
 
 ## 🙏 Recognition
