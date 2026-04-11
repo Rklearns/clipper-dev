@@ -1,3 +1,3 @@
 """
-Test suite for ClipStack.
+Test suite for Clipper-dev.
 """
