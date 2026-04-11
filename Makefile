@@ -10,7 +10,7 @@ install:  ## Install production dependencies
 	pip install -r requirements.txt
 
 install-dev:  ## Install development dependencies
-	pip install -r requirements-dev.txt
+	pip install -r requirements.txt
 	pip install -e .
 
 test:  ## Run tests
