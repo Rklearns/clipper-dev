@@ -1,6 +1,9 @@
-#  Clipper-dev
 
-> **The Ultimate Cross-Platform Clipboard Manager for Developers**
+
+<div align="center">
+
+#  Clipper-dev
+ **The Ultimate Cross Platform Clipboard Manager for Developers**
 
 [![PyPI Downloads](https://static.pepy.tech/personalized-badge/clipper-dev?period=total&units=ABBREVIATION&left_color=GREY&right_color=MAGENTA&left_text=downloads)](https://pepy.tech/projects/clipper-dev)
 [![PyPI version](https://badge.fury.io/py/clipper-dev.svg)](https://badge.fury.io/py/clipper-dev)
@@ -8,7 +11,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Platform](https://img.shields.io/badge/platform-macOS%20%7C%20Linux%20%7C%20Windows-lightgrey.svg)](https://github.com/Rklearns/clipper-dev)
 
-<div align="center">
+
 
 
 **Never lose your clipboard content again. Clipper is the developer's best friend for managing clipboard history with style.**
@@ -21,7 +24,7 @@
 
 ##  Why Clipper-dev?
 
-**Clipper-dev** is not just another clipboard manager—it's a **developer productivity powerhouse** designed from the ground up for modern development workflows.
+**Clipper-dev** is not just another clipboard manager, it's a **developer productivity powerhouse** designed from the ground up for modern development workflows.
 
 ###  **Built for Developers, by Developers**
 
