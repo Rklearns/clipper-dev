@@ -1,5 +1,5 @@
 """
-Clipboard management functionality for ClipStack.
+Clipboard management functionality for Clipper-dev.
 
 This module handles all clipboard operations including reading, writing,
 and monitoring clipboard changes across different platforms.
