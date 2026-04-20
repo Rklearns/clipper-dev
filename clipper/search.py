@@ -1,5 +1,5 @@
 """
-Search functionality for ClipStack.
+Search functionality for Clipper-dev.
 
 This module provides fast and efficient search capabilities for clipboard
 history using fuzzy matching and various search algorithms.
