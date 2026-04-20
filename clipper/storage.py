@@ -1,5 +1,5 @@
 """
-Storage management functionality for Clipper.
+Storage management functionality for Clipper-dev.
 
 This module handles all data persistence operations including saving,
 loading, and managing clipboard history with support for JSON storage
@@ -440,7 +440,7 @@ class StorageManager:
             console.print("[yellow]No clipboard history found[/yellow]")
             return
 
-        table = Table(title="📋 Clipper - Your Clipboard History")
+        table = Table(title=" Clipper - Your Clipboard History")
         table.add_column("Index", style="cyan", justify="center")
         table.add_column("Timestamp", style="green")
         table.add_column("Type", style="blue")
